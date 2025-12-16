@@ -9,7 +9,7 @@ set -euo pipefail  # Exit on error, undefined vars, pipe failures
 # Anchor date: Date of the first Hiero Python SDK Community Call (Monday, December 15, 2025)
 # This date is used as the reference point for fortnightly meeting calculations
 # NOTE: Using today's date for testing purposes - change to actual meeting date for production
-ANCHOR_DATE="${ANCHOR_DATE:-2025-12-15}"  # Set to today (Monday) for testing
+ANCHOR_DATE="${ANCHOR_DATE:-2025-12-16}"  # Set to today (Tuesday) for testing
 MEETING_LINK="${MEETING_LINK:-https://zoom-lfx.platform.linuxfoundation.org/meeting/92041330205?password=2f345bee-0c14-4dd5-9883-06fbc9c60581}"
 CALENDAR_LINK="${CALENDAR_LINK:-https://zoom-lfx.platform.linuxfoundation.org/meetings/hiero?view=week}"
 DRY_RUN="${DRY_RUN:-false}"
@@ -27,7 +27,7 @@ echo "Dry Run: $DRY_RUN"
 echo "=================================="
 
 # Check if it's a meeting week
-IS_MEETING_WEEK=$(python3 -c "
+IS_MEETING_WEEK=$(python -c "
 from datetime import date
 import os
 d1 = date.fromisoformat('$ANCHOR_DATE')
