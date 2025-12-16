@@ -67,24 +67,24 @@ MEETING_TIME=$(date -u -d "+4 hours" +"%H:%M UTC (%I:%M %p UTC)")
 COMMENT_BODY=$(cat <<EOF
 Hello, this is the Community Call Bot.
 
-🗓️ **Community Call Reminder** 🗓️
+## Community Call Reminder
 
 This is a reminder that the Hiero Python SDK Community Call is scheduled in approximately 4 hours at **$MEETING_TIME**.
 
 We host fortnightly community calls where we want to hear from the community about all things related to the Python SDK. This is a great opportunity to discuss this issue, ask questions, or provide feedback directly to the maintainers and community.
 
-📋 **Meeting Details:**
-- 🕐 Time: $MEETING_TIME
-- 🔗 Join Link: [Zoom Meeting]($MEETING_LINK)
-- 📅 Calendar: [Hiero Calendar]($CALENDAR_LINK)
+### Meeting Details:
+- **Time:** $MEETING_TIME
+- **Join Link:** [Zoom Meeting]($MEETING_LINK)
+- **Calendar:** [Hiero Calendar]($CALENDAR_LINK)
 
-💡 **What to expect:**
+### What to expect:
 - Discussion of open issues and feature requests
 - Q&A with maintainers
 - Community feedback and suggestions
 - Updates on SDK development
 
-⚠️ **Disclaimer:** This is an automated reminder. Please subscribe to the meeting to be notified of any changes and check the Hiero calendar for the most up-to-date information.
+**Disclaimer:** This is an automated reminder. Please subscribe to the meeting to be notified of any changes and check the Hiero calendar for the most up-to-date information.
 EOF
 )
 

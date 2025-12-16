@@ -56,24 +56,24 @@ $meetingTime = (Get-Date).AddHours(4).ToString("HH:mm 'UTC' (hh:mm tt 'UTC')")
 $commentBody = @"
 Hello, this is the Community Call Bot.
 
-🗓️ **Community Call Reminder** 🗓️
+## Community Call Reminder
 
 This is a reminder that the Hiero Python SDK Community Call is scheduled in approximately 4 hours at **$meetingTime**.
 
 We host fortnightly community calls where we want to hear from the community about all things related to the Python SDK. This is a great opportunity to discuss this issue, ask questions, or provide feedback directly to the maintainers and community.
 
-📋 **Meeting Details:**
-- 🕐 Time: $meetingTime
-- 🔗 Join Link: [Zoom Meeting]($MeetingLink)
-- 📅 Calendar: [Hiero Calendar]($CalendarLink)
+### Meeting Details:
+- **Time:** $meetingTime
+- **Join Link:** [Zoom Meeting]($MeetingLink)
+- **Calendar:** [Hiero Calendar]($CalendarLink)
 
-💡 **What to expect:**
+### What to expect:
 - Discussion of open issues and feature requests
 - Q&A with maintainers
 - Community feedback and suggestions
 - Updates on SDK development
 
-⚠️ **Disclaimer:** This is an automated reminder. Please subscribe to the meeting to be notified of any changes and check the Hiero calendar for the most up-to-date information.
+**Disclaimer:** This is an automated reminder. Please subscribe to the meeting to be notified of any changes and check the Hiero calendar for the most up-to-date information.
 "@
 
 # Process only the latest issue per user
